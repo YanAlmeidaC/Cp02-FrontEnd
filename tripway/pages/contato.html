@@ -1,69 +1,67 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>TripWay - Contato</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TripWay - Contato</title>
+<link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
  
   <header>
-    <img src="https://img.freepik.com/vetores-premium/modelo-de-logotipo-de-viagens-para-agencia-de-viagens_6711-8999.jpg" alt="Logo TripWay" width="180" alt="Logo TripWay" width="180">
-    <h1>Contato e Reserva</h1>
+<img class="logo" src="https://img.freepik.com/vetores-premium/modelo-de-logotipo-de-viagens-para-agencia-de-viagens_6711-8999.jpg%22 alt="Logo TripWay">
+<h1>Contato e Reserva</h1>
  
     <nav>
-      <ul>
-        <li><a href="../index.html">Home</a></li>
-        <li><a href="destinos.html">Destinos</a></li>
-        <li><a href="pacotes.html">Pacotes</a></li>
-        <li><a href="contato.html">Contato</a></li>
-      </ul>
-    </nav>
-  </header>
+<ul>
+<li><a href="../index.html">Home</a></li>
+<li><a href="destinos.html">Destinos</a></li>
+<li><a href="pacotes.html">Pacotes</a></li>
+<li><a href="contato.html">Contato</a></li>
+</ul>
+</nav>
+</header>
  
   <main>
+<section class="hero">
+<h2>Faça sua reserva</h2>
+<p>Preencha o formulário abaixo para receber uma proposta personalizada.</p>
+<img src="https://th.bing.com/th/id/R.219be00f9ce29e68f4eedc24426ed270?rik=ahpbWLvZhbzD2w&pid=ImgRaw&r=0" alt="Imagem de contato e reserva de viagens">
+</section>
  
-    <section>
-      <h2>Faça sua reserva</h2>
-      <img src="https://th.bing.com/th/id/R.219be00f9ce29e68f4eedc24426ed270?rik=ahpbWLvZhbzD2w&pid=ImgRaw&r=0" alt="Imagem de contato e reserva de viagens" width="500">
-    </section>
+    <section class="form-card">
+<form action="#" method="post">
+<label for="nome">Nome:</label>
+<input type="text" id="nome" name="nome" required>
  
-    <section>
-      <form action="#" method="post">
+        <label for="email">E-mail:</label>
+<input type="email" id="email" name="email" required>
  
-        <label for="nome">Nome:</label><br>
-        <input type="text" id="nome" name="nome" required><br><br>
+        <label for="destino">Destino de interesse:</label>
+<select id="destino" name="destino" required>
+<option value="">Selecione</option>
+<option value="praia">Praia do Sonho</option>
+<option value="montanha">Pico das Neves</option>
+<option value="cidade">Cidade dos Anjos</option>
+</select>
  
-        <label for="email">E-mail:</label><br>
-        <input type="email" id="email" name="email" required><br><br>
+        <label for="data">Data:</label>
+<input type="date" id="data" name="data" required>
  
-        <label for="destino">Destino de interesse:</label><br>
-        <select id="destino" name="destino" required>
-          <option value="">Selecione</option>
-          <option value="praia">Praia do Sonhos </option>
-          <option value="montanha">Pico das Neves </option>
-          <option value="cidade">Cidade dos Anjos </option>
-        </select><br><br>
+        <label for="quantidade">Quantidade de pessoas:</label>
+<input type="number" id="quantidade" name="quantidade" min="1" required>
  
-        <label for="data">Data:</label><br>
-        <input type="date" id="data" name="data" required><br><br>
+        <label for="mensagem">Mensagem:</label>
+<textarea id="mensagem" name="mensagem" rows="5" required></textarea>
  
-        <label for="quantidade">Quantidade de pessoas:</label><br>
-        <input type="number" id="quantidade" name="quantidade" min="1" required><br><br>
- 
-        <label for="mensagem">Mensagem:</label><br>
-        <textarea id="mensagem" name="mensagem" rows="5" cols="30" required></textarea><br><br>
- 
-        <button type="submit">Enviar</button>
- 
-      </form>
-    </section>
- 
-  </main>
+        <button type="submit">Enviar reserva</button>
+</form>
+</section>
+</main>
  
   <footer>
-    <p>&copy; 2025 TripWay - Guia de Viagens</p>
-  </footer>
+<p>&copy; 2025 TripWay - Guia de Viagens</p>
+</footer>
  
 </body>
 </html>
